@@ -7,7 +7,7 @@
   <title>Books Page</title>
   <style>
     body{
-      background-image: url('./Backgrounds/img3.png');
+      background-image: url('/Backgrounds/img3.png');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
@@ -129,6 +129,24 @@
       color: white;
       padding: 10px;
       text-decoration: none;
+      position: relative;
+    }
+
+    nav>a:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    nav>a:hover::after{
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
   </style>
   <script>
@@ -149,7 +167,7 @@
       x.setAttribute("class","Book");
       d.setAttribute("id","image1");
       d.setAttribute("class","image1");
-      d.setAttribute("src","./Images/sample-book-img.jpeg")
+      d.setAttribute("src","/Images/sample-book-img.jpeg")
       y.setAttribute("id","imageContainer");
       y.setAttribute("class","imageContainer");
       z.setAttribute("id","a");
@@ -181,13 +199,13 @@
 <body onload="adddata()">
   <header>
     <nav>
-      <a href="">Home</a>
+      <a href="./HomePage.html">Home</a>
       <a href="">Notes</a>
       <a href="">PYQ</a>
-      <a href="./BooksPage.html">Books</a>
-      <a href="">Feedback</a>
-      <a href="./VIDEOS FIRST.html" target="_blank">Videos</a>
-      <a href="./LoginPage.html" target="_blank">Login</a>
+      <a href=".//BooksPage.html">Books</a>
+      <a href="./feedback.html">Feedback</a>
+      <a href="./VideosPage.html">Videos</a>
+      <a href="/ProfilePages/LoginPage.html">Login</a>
     </nav>
   </header>
   <main>

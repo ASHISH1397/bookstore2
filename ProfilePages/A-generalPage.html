@@ -21,6 +21,8 @@
     .sidebar{
       width: 25%;
       background-color: grey;
+      height: 100vh;
+      text-align: center;
     }
 
     .sidebar>ul{
@@ -30,12 +32,22 @@
       justify-content: space-evenly;
       height: 100%;
     }
+    .sidebar>ul>a{
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+    }
+
+    .sidebar>ul>a:hover{
+      font-size: 35px;
+    }
 
     .details-side{
       /* border-style: solid; */
       width: 75%;
       background-color: white;
       padding: 10px;
+      padding-left: 30px;
 
     }
  
@@ -97,14 +109,35 @@
       border-width: 2px;
       outline: none;
     }
+
+    .button-div{
+      margin-top: 20px;
+      /* border-style: solid; */
+    }
+    .save-button{
+      font-size: 20px;
+      width: 150px;
+      height: 50px;
+      background-color: #fa7328;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+
+      transition: box-shadow 0.12s ;
+    }
+
+    .save-button:active{
+      box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    }
   </style>
 </head>
 <body>
   <div class="full-container">
     <div class="sidebar">
       <ul>
-        <a href="">General</a>
-        <a href="">Privacy</a>
+        <a href="./A-generalPage.html">General</a>
+        <a href="./A-privacyPage.html">Privacy</a>
       </ul>
     </div>
 
@@ -119,7 +152,7 @@
           </div>
 
           <div class="inputss">
-            <input type="text" readonly placeholder="jordan123@gmail.com">
+            <input type="email" readonly placeholder="jordan123@gmail.com">
             <span class="iflabels">Email</span>
           </div>
 
@@ -128,6 +161,10 @@
             <span class="iflabels">Contact</span>
           </div>
 
+        </div>
+        <div class="button-div">
+
+          <button class="save-button">SAVE</button>
         </div>
       </div>
 

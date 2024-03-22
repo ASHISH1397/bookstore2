@@ -7,7 +7,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In Page</title>
+  <title>Forgot Password Page</title>
 
 </head>
 <style>
@@ -40,6 +40,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    
+    
   }
   .emailpass>input{
     font-size: 20px;
@@ -74,8 +76,7 @@
 
   .footer-buttons{
     /* border-style: solid; */
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     width: 90%;
     
   }
@@ -92,45 +93,33 @@
     color: rgb(104, 102, 102);
   }
 
-  .req-checks{
-    /* border-style: solid; */
-    width: 100%;
-    margin-bottom: 20px;
+  .back-button{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .back-button:hover{
+    text-decoration: underline;
   }
 </style>
 <body>
 
   <div class="main-container">
     <h2>Book Website</h2>
-    <h1>Create your Account!</h1>
+    <h1>Forgot Password</h1>
 
     <div class="login-container">
+      <p>Enter your email and we'll send you a link to reset your password.</p>
       <div class="emailpass">
-        <span>Name</span>
-        <input type="text" placeholder="eg. Rob Wilson">
         <span>Email</span>
-        <input type="email" placeholder="eg. elon@tesla.com" required>
-  
-        <span>Password</span>
-        <input type="password" placeholder="eg. pass123" required>
-
-        <span>Confirm Password</span>
-        <input type="password" placeholder="eg. pass123" required>
+        <input type="text" placeholder="Enter your email">
       </div>
 
-      <div class="req-checks">
-        <input type="checkbox"> <span>Remember me</span>
-      </div>
+      <button class="login-button">Submit</button>
 
-      <button class="login-button">Create Account</button>
+      <a href="./LoginPage.html" class="back-button">Back to Login</a>
 
-      <div class="footer-buttons">
-        <span class="tos1">By creating an account you agree to our <span class="tos2">Terms of Service and Privacy Policy.</span></span>
-      </div>
-
-      
-
-    </div>
   </div>
   
 </body>
