@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Styles/videos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-color: #f7f7f7; */
+        }
+
+        nav {
+            width: 100vw;
+            /* border-style: solid; */
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        /* nav ul li {
+            /* display: inline; */
+            /* margin-right: 20px; */
+        /* } */
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 300px;
+            margin: 20px;
+            height: 300px;
+            text-align: center;
+            /* background-color: #f0eaea; */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            position: relative;
+            
+            /* background-color: #1f407f; */
+            
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            /* position: absolute; */
+             max-width: 95%;
+            max-height: 80%; 
+             min-height: 80%;
+            height: auto;
+            margin-bottom: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
+            
+        }
+
+        .container::after{
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            height: 100%;
+            width: 95%;
+            background-color: #d7538f75;
+            z-index: -2;
+            border-radius: 10px;
+        }
+        .container::before{
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 16px;
+            height: 100%;
+            width: 90%;
+            background-color: #c57da457;
+            z-index: -2;
+            border-radius: 10px;
+        }
+
+        .container a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 0px;
+            font-weight: bold;
+            
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+        }
+
+
+
+        #vid{
+            position: absolute;
+
+            display: flex;
+            justify-content: end;
+            bottom: calc(300px - 78%);
+            right: 10px;
+            display: none;
+            text-decoration: none;
+            color: #11094e;
+        }
+        .container:hover #vid{
+            display: inline;
+        }
+
+        .container a:hover {
+            background-color: #f3f3f3;
+        }
+
+        /* .acc-img{
+            background: none;
+            border: none;
+            width: 45px;
+            height: 30px;
+            cursor: pointer;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <h1>Automata</h1> -->
+
+    <header>
+        <nav>
+           
+            <a href="">Home</a>
+            <a href="">Notes</a>
+            <a href="">PYQs</a>
+            <a href="/BooksPage.html">Books</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="./VideosPage.html">Videos</a>
+            <!-- <a href="">Sign In</a> -->
+            
+            <a href="">Profile</a>
+   
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            
+            <a href="videos.html">
+                <img src="/web for college/mnnit logo.png" alt="Clickable Image">
+                <span id="vid">videos</span>
+            </a>
+        </div>
+        <div class="container">
+            
+            <a href="videos.html">
+                <img src="/web for college/mnnit logo.png" alt="Clickable Image">
+                <span id="vid">videos</span>
+            </a>
+        </div>
+        <div class="container">
+            
+            <a href="videos.html">
+                <img src="/web for college/mnnit logo.png" alt="Clickable Image">
+                <span id="vid">videos</span>
+            </a>
+        </div>
+        <div class="container">
+            <a href="videos.html">
+                <img src="/heritage web/basic.jpg" alt="Clickable Image">
+                <span id="vid">videos</span>
+            </a>
+            </div>
+        <div class="container">
+            <a href="videos.html">
+                <img src="" alt="Clickable Image">
+                <span id="vid">videos</span>
+            </a>
+        </div>
+        <div class="container" >
+            <a href="videos.html">
+                <img src="" alt="Clickable Image">
+                <span id="vid">videos</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; gsdjcgsdlgsd</p>
+    </footer> -->
+    <!-- <script>
+        
+        const containers = document.querySelectorAll('.container');
+
+        containers.forEach(container => {
+            const vidSpan = container.querySelector('.vid');
+   
+            container.addEventListener('mouseover', function() {
+                vidSpan.style.display = 'inline';
+            });
+      
+            container.addEventListener('mouseout', function() {
+                vidSpan.style.display = 'none';
+            });
+        });
+    </script> -->
+</body>
+</html>

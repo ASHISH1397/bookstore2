@@ -3,59 +3,162 @@
 <head>
     <link rel="icon" type="image/png" href="/Images/account-icon2.webp">
     <link rel="stylesheet" href="/Styles/home.css">
+    <style>
+      body {
+      
+      }
+
+      .landing-content {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .landing-content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .landing-content p {
+        font-size: 18px;
+        margin-bottom: 40px;
+        color: #666;
+      }
+
+      .book-banner {
+        background-image: url("/Images/book-banner.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 20px 0;
+        color: #fff;
+        text-align: center;
+        background-color: #333;
+      }
+
+      .book-banner h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .more-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .more-button:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .scroll-button {
+        position: absolute;
+        top: 52%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        z-index: 1;
+        font-size: 30px;
+  
+        border-radius: 50%;
+
+
+      }
+
+      .scroll-button:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      .scroll-button.left {
+        left: 10px;
+      }
+
+      .scroll-button.right {
+        right: 10px;
+      }
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-
+    <title>Home</title>
 </head>
 <body>
     <header>
         <nav>
-            
-            <a href="./NavPages/HomePage.html">Home</a>
-            <a href="">Notes</a>
-            <a href="">PYQs</a>
-            <a href="/NavPages/BooksPage.html">Books</a>
-            <a href="/NavPages/feedback.html">Feedback</a>
-            <a href="./NavPages/VideosPage.html">Videos</a>
-            <!-- <a href="">Sign In</a> -->
-            
-            <a href="">Profile</a>
-    
+            <a href="./HomePage.html">Home</a>
+            <a href="#">Notes</a>
+            <a href="#">PYQs</a>
+            <a href="./BooksPage.html">Books</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./VideosPage.html">Videos</a>
+            <a href="/ProfilePages/LoginPage.html">Profile</a>
         </nav>
-
     </header>
-    <h1>Welcome to the Bookstore user!</h1>
 
-    <main>
-        <div class="desciption">
-            <h3>Description About Website</h3>
-            <h5>some description</h5>
+    <div class="landing-content">
+        <h1>Welcome to our Bookstore!</h1>
+        <p>Discover a wide range of books for every reader.</p>
+    </div>
+
+    <div class="book-banner">
+        <h1>Browse our Books</h1>
+        <div class="scroll-container">
+          <button class="scroll-button left" onclick="scrollContainer('left')">←</button>
+          <button class="scroll-button right" onclick="scrollContainer('right')">→</button>
+
+            <img src="/Images/dsaBook-img.jpeg" alt="">
+            <img src="/Images/dsaBook-img.jpeg" alt="">            <img src="/Images/dsaBook-img.jpeg" alt="">
+            <img src="/Images/dsaBook-img.jpeg" alt="">            <img src="/Images/dsaBook-img.jpeg" alt="">
+            <img src="/Images/dsaBook-img.jpeg" alt="">
+            <img src="/Images/dsaBook-img.jpeg" alt="">
+            <img src="/Images/dsaBook-img.jpeg" alt="">
         </div>
+        <button class="more-button">Browse More</button>
+    </div>
 
-        <div class="banner">
-            <h1>Browse our Books</h1>
-            
-            <div class="scroll-container">
-                <!-- <img src="/Images/playlist1.png" alt=""> -->
-                <img src="/Images/dsaBook-img.jpeg" alt="">
-                <img src="/Images/dsaBook-img.jpeg" alt="">
-                <img src="/Images/dsaBook-img.jpeg" alt="">
-                <img src="/Images/dsaBook-img.jpeg" alt="">
-                <img src="/Images/dsaBook-img.jpeg" alt="">
-                <img src="/Images/dsaBook-img.jpeg" alt=""><img src="/Images/dsaBook-img.jpeg" alt="">
-                <img src="/Images/dsaBook-img.jpeg" alt="">
-                <img src="/Images/dsaBook-img.jpeg" alt="">
+    <!-- <footer>
+        <p>&copy; 2024 Book Store. All rights reserved.</p>
+    </footer> -->
 
-                <button class="more-button">Browse More</button>
-                
-            </div>
-        </div>
+    <script>
+      function scrollContainer(direction) {
+          const container = document.querySelector('.scroll-container');
+          const scrollAmount = 300; // Adjust as needed
 
-        <div class="reviews">
-
-        </div>
-    </main>
-
+          if (direction === 'left') {
+              container.scrollBy({
+                  left: -scrollAmount,
+                  behavior: 'smooth'
+              });
+          } else if (direction === 'right') {
+              container.scrollBy({
+                  left: scrollAmount,
+                  behavior: 'smooth'
+              });
+          }
+      }
+  </script>
 </body>
 </html>
