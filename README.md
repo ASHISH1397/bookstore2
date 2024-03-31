@@ -54,7 +54,7 @@ We value your feedback! If you encounter any issues, have suggestions for new fe
 
 -  **Availibilities of PYQs**
 
-    All subject PYQs are also available here in their seprate course and subject page which is uplaoded on google drive and the link embeded over ehere and after clicking on the link will lead you on google drive...
+    All subject PYQs are also available here in their seprate course and subject page which is uploaded on google drive and the link embeded over here and after clicking on the link will lead you on google drive...
 
 
 ## Contributing
