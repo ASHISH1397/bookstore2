@@ -1,0 +1,149 @@
+body{
+  /* background-image: url('/Backgrounds/img3.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+  background: #ADA996; 
+  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+
+  margin: 0;
+  padding: 0;
+
+}
+.all-books{
+  border-style: solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.book{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.25s ease;
+  min-height: 100px;
+
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+.book:hover{
+  /* width: 102%; */
+  /* transition: ease-in; */
+  transform: scaleX(1.05);
+/* transform-origin: bottom left; */
+}
+.image1{
+  width: 300px;
+  height: 200px;
+  display: block;
+  
+}
+.book-title{
+  padding: 10px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+.book-desc{
+  padding: 10px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: #c8f18f;
+  text-align: center;
+
+}
+.writers{
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: rgb(163, 161, 161);
+  font-size: 14px;
+  padding: 5px;
+}
+
+.book-buttons{
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: space-around;
+  height: 8%;
+  margin-bottom: 5px;
+
+
+}
+button{
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: rgb(232, 77, 232);
+  border-color: rgb(232, 77, 232);
+  cursor: pointer;
+
+}
+
+main{
+  padding: 20px;
+}
+header{
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+
+  border-style: solid;
+  backdrop-filter: blur(3px);
+  border-color: rgb(255, 255, 255);
+  border-width: 1.5px;
+  padding: 10px 10px;
+  border-radius: 7px;
+  box-shadow: 3px 3px #888888;
+
+  z-index: 10;
+  position: sticky;
+  top: 0;
+
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center;
+
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+nav>a{
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  /* border-style: solid; */
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
+
+  color: midnightblue;
+
+}
+
+nav>a:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: midnightblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav>a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

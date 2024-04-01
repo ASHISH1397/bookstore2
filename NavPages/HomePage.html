@@ -4,24 +4,34 @@
     <link rel="icon" type="image/png" href="/Images/account-icon2.webp">
     <link rel="stylesheet" href="/Styles/home.css">
     <style>
-      body {
       
-      }
-
       .landing-content {
         text-align: center;
         padding: 50px 0;
-      }
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+      }
+      
       .landing-content h1 {
         font-size: 36px;
         margin-bottom: 20px;
+        
+        color: rgb(191, 192, 187);
+        width: 50%;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+        padding: 10px;
+
       }
 
       .landing-content p {
         font-size: 18px;
         margin-bottom: 40px;
-        color: #666;
+        color: #504e4e;
       }
 
       .book-banner {
@@ -31,12 +41,20 @@
         padding: 20px 0;
         color: #fff;
         text-align: center;
-        background-color: #333;
+        /* background-color: #333; */
+        background-color: rgba(0,0,0,0.3);
+
+        margin-bottom: 1000px;
       }
 
       .book-banner h1 {
         font-size: 48px;
         margin-bottom: 20px;
+
+      }
+
+      .scroll-container{
+        background-color: rgba(0,0,0,0.3);
       }
 
       .more-button {
