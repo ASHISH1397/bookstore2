@@ -1,8 +1,17 @@
 body{
-  background-image: url('/Backgrounds/bg-5.jpeg');
+  /* background-image: url('/Backgrounds/bg-5.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
+  background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+
+
+
+
 }
 
 header{
@@ -53,6 +62,8 @@ nav>a{
 
   position: relative;
   transition: 1s ease;
+
+  color: midnightblue;
 }
 
 .container{
@@ -118,7 +129,7 @@ nav>a:after{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: midnightblue;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -130,3 +141,4 @@ nav>a:hover::after{
 .container:hover{
 
 }
+
