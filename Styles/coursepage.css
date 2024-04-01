@@ -2,14 +2,11 @@ body {
   background: url(https://i.pinimg.com/564x/1d/79/a2/1d79a249d27332b782428cc669430d5d.jpg);
   
 }
-
 .container {
   display: flex;
   justify-content: space-around;
-  text-align: center;
-  
+  text-align: center; 
 }
-
 h1 {
   background-color: rgb(177, 111, 238);
   border: 2px solid black;
@@ -20,7 +17,6 @@ h1 {
   width: fit-content;
   padding: 10px 15px;
 }
-
 .courses,.subjects,.semesters{
   min-width: 150px;
   width: 25vw;
@@ -39,7 +35,6 @@ h1 {
   font-weight: bold;
   font-size: 20px;
 }
-
 h3 {
   margin: 10px auto;
   width: fit-content;
@@ -52,7 +47,6 @@ h3 {
   font-weight: bold;
   border-radius: 10px;
 }
-
 button {
   margin: 20px auto;
   padding: 10px 20px;
@@ -64,15 +58,12 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button:hover {
   background-color: #45a049;
 }
-
 ul {
   padding: 0;
 }
-
 ul li {
   list-style: none;
   margin-bottom: 10px;

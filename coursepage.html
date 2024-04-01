@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COURSES</title>
+  <script src="style2.js">
+      
+  </script>
   <link rel="stylesheet" href="./styles/coursepage.css">
 </head>
 <body>
@@ -13,49 +16,44 @@
       <div class="courses">
           <h3>Courses</h3>
           <ul id="coursesList">               
-                <li><input type="radio" name="courses" value="btech_cs" onchange="clearOthers(this)"> Computer Science </li>
-                <li><input type="radio" name="courses" value="electrical" onchange="clearOthers(this)"> Electrical </li>
-                <li><input type="radio" name="courses" value="btech_ece" onchange="clearOthers(this)"> ECE</li>
-                <li><input type="radio" name="courses" value="btech_eee" onchange="clearOthers(this)"> EEE</li>
-                <li><input type="radio" name="courses" value="btech_electronics" onchange="clearOthers(this)"> Electronics</li>
-                <li><input type="radio" name="courses" value="btech_civil" onchange="clearOthers(this)"> Civil</li>
-                <li><input type="radio" name="courses" value="btech_mechanical" onchange="clearOthers(this)"> Mechanical</li>
-                <li><input type="radio" name="courses" value="btech_chemical" onchange="clearOthers(this)"> Chemical</li>
-                  
-                <li><input type="radio" name="courses" value="mca" onchange="clearOthers(this)"> MCA</li>
-                <li><input type="radio" name="courses" value="mba" onchange="clearOthers(this)"> MBA</li>
-                <li><input type="radio" name="courses" value="phd" onchange="clearOthers(this)"> PhD</li>
-            
-                
-                <li><input type="radio" name="courses" value="mtech_electrical" onchange="clearOthers(this)"> Master in Electrical Engineering</li>
-                <li><input type="radio" name="courses" value="mtech_cs" onchange="clearOthers(this)"> Master in computer science</li>
-                <li><input type="radio" name="courses" value="mtech_ece" onchange="clearOthers(this)"> Master in ECE</li>
-                <li><input type="radio" name="courses" value="mtech_eee" onchange="clearOthers(this)"> Master in EEE </li>
-                <li><input type="radio" name="courses" value="mtech_electronics" onchange="clearOthers(this)">Master Electronics Engineering</li>
-                <li><input type="radio" name="courses" value="mtech_civil" onchange="clearOthers(this)">Master in  Civil engingineering</li>
-                <li><input type="radio" name="courses" value="mtech_mechanical" onchange="clearOthers(this)">Master in Mechanical engineering</li>
-                <li><input type="radio" name="courses" value="mtech_chemical" onchange="clearOthers(this)">Master Chemical Engineering</li>
-          </ul>
+             <li> <input type="radio" name="courses" value="btech_cs"  
+                  onclick="removedata();savedata();
+                  " id="courses"> Computer Science </li>
+                <li><input type="radio" name="courses" value="electrical"
+                  onclick="removedata(); savedata();"  id="courses"> Electrical </li>
+                <li><input type="radio" name="courses" value="btech_ece" 
+                  onclick="removedata();savedata(); "onchange="clearOthers(this)" id="courses"> ECE</li>
+                <li><input type="radio" name="courses" value="btech_eee"
+                  onclick="removedata();savedata(); " id="courses"> EEE</li>
+                <li><input type="radio" name="courses" value="btech_electronics" id="courses" onclick="removedata();savedata(); "" onchange="clearOthers(this)"> Electronics</li>
+                <li><input type="radio" name="courses" value="btech_civil" id="courses" onclick="removedata();savedata(); "" onchange="clearOthers(this)"> Civil</li>
+                <li><input type="radio" name="courses" value="btech_mechanical" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> Mechanical</li>
+                <li><input type="radio" name="courses" value="btech_chemical" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> Chemical</li>
+                <li><input type="radio" name="courses" value="mca" id="courses" onclick="removedata();savedata(); "  onchange="clearOthers(this)"> MCA</li>
+                <li><input type="radio" name="courses" value="mba" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> MBA</li>
+                <li><input type="radio" name="courses" value="phd" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> PhD</li>              
+                <li><input type="radio" name="courses" value="mtech_electrical" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> Master in Electrical Engineering</li>
+                <li><input type="radio" name="courses" value="mtech_cs" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> Master in computer science</li>
+                <li><input type="radio" name="courses" value="mtech_ece"  id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> Master in ECE</li>
+                <li><input type="radio" name="courses" value="mtech_eee" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)"> Master in EEE </li>
+                <li><input type="radio" name="courses" value="mtech_electronics" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)">Master Electronics Engineering</li>
+                <li><input type="radio" name="courses" value="mtech_civil" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)">Master in  Civil engingineering</li>
+                <li><input type="radio" name="courses" value="mtech_mechanical" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)">Master in Mechanical engineering</li>
+                <li><input type="radio" name="courses" value="mtech_chemical" id="courses" onclick="removedata();savedata(); " onchange="clearOthers(this)">Master Chemical Engineering</li>
+              </ul>
       </div>
 
       <div class="semesters">
           <h3>Semester</h3>
-          <ul id="semesterList">
-              <li><input type="radio" name="semester" value="sem1" onchange="clearOthers(this)"> Semester 1</li>
-              <li><input type="radio" name="semester" value="sem2" onchange="clearOthers(this)"> Semester 2</li>
-              <li><input type="radio" name="semester" value="sem3" onchange="clearOthers(this)"> Semester 3</li>
-              <li><input type="radio" name="semester" value="sem4" onchange="clearOthers(this)"> Semester 4</li>
-              <li><input type="radio" name="semester" value="sem5" onchange="clearOthers(this)"> Semester 5</li>
-              <li><input type="radio" name="semester" value="sem6" onchange="clearOthers(this)"> Semester 6</li>
-              <li><input type="radio" name="semester" value="sem7" onchange="clearOthers(this)"> Semester 7</li>
-              <li><input type="radio" name="semester" value="sem8" onchange="clearOthers(this)"> Semester 8</li>
-          </ul>
+           <ul id="semesterList" class="semesterList">
+            </ul> 
       </div>
 
       <div class="subjects">
           <h3>Subjects</h3>
           <ul id="subjectsList">
-            <li><input type="radio" name="subjects" value="Operating Systems" onchange="clearOthers(this)"> Operating Systems</li>
+            
+            <input type="radio" name="subjects" value="Operating Systems" onchange="clearOthers(this)"> Operating Systems</li>
             <li><input type="radio" name="subjects" value="Computer Networks" onchange="clearOthers(this)"> Computer Networks</li>
             <li><input type="radio" name="subjects" value="Artificial Intelligence" onchange="clearOthers(this)"> Artificial Intelligence</li>
             <li><input type="radio" name="subjects" value="Computer Architecture" onchange="clearOthers(this)"> Computer Architecture</li>
@@ -93,8 +91,9 @@
             <li><input type="radio" name="subjects" value="Optimal Control Systems" onchange="clearOthers(this)"> Optimal Control Systems</li>
             <li><input type="radio" name="subjects" value="Electrical Engineering Practices" onchange="clearOthers(this)"> Electrical Engineering Practices</li>
             <li><input type="radio" name="subjects" value="Electrical Machines Process and Principles" onchange="clearOthers(this)"> Electrical Machines Process and Principles</li>
-        </ul>
-        
+          </form>
+          </ul>
+       
 
       </div>
   </div>
