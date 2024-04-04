@@ -67,7 +67,7 @@ We value your feedback! If you encounter any issues, have suggestions for new fe
 
 - ASHISH SINGH (2023CA25)
 
-- AYUSH MALVIYA (2023CA28)
+- AYUSH KUMAR (2023CA28)
 
 ## Tech Stack
 
